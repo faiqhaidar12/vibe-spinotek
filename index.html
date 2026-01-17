@@ -89,9 +89,9 @@
       }
     </style>
   </head>
-  <body class="min-h-screen grid-bg">
+  <body class="min-h-screen grid-bg overflow-x-hidden">
     <nav
-      class="sticky top-0 z-50 bg-black/90 backdrop-blur-xl border-b border-white/5 px-6 py-5"
+      class="sticky top-0 z-50 bg-black/90 backdrop-blur-xl border-b border-white/5 px-6 py-5 w-full"
     >
       <div class="max-w-7xl mx-auto flex justify-between items-center">
         <img
@@ -116,12 +116,12 @@
 
     <header class="max-w-7xl mx-auto px-6 pt-24 pb-16 relative">
       <div
-        class="absolute -top-20 -left-20 w-[500px] h-[500px] bg-blue-600/20 blur-[120px] rounded-full pointer-events-none animate-pulse"
+        class="absolute -top-20 -left-20 w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-blue-600/20 blur-[100px] rounded-full pointer-events-none animate-pulse"
       ></div>
 
-      <div class="border-l-[6px] border-blue-600 pl-8 relative z-10">
+      <div class="border-l-[6px] border-blue-600 pl-6 md:pl-8 relative z-10">
         <h1
-          class="text-7xl md:text-[120px] font-black tracking-[ -0.05em] leading-[0.85] mb-8"
+          class="text-5xl sm:text-6xl md:text-[120px] font-black tracking-tighter leading-[0.85] mb-8 break-words"
         >
           <span class="block text-white">SPINOTEK</span>
           <span
@@ -133,7 +133,7 @@
 
         <div
           id="typewriter"
-          class="text-blue-100/60 text-xl md:text-2xl font-medium min-h-[3em] md:min-h-[1.5em] tracking-wide mt-4"
+          class="text-blue-100/60 text-lg md:text-2xl font-medium min-h-[4em] md:min-h-[1.5em] tracking-wide mt-4 max-w-full italic"
         ></div>
       </div>
     </header>
@@ -185,31 +185,22 @@
     </main>
 
     <footer
-      class="max-w-7xl mx-auto px-6 py-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6"
+      class="max-w-7xl mx-auto px-6 py-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left"
     >
-      <div class="flex items-center gap-4">
+      <div class="flex flex-col md:flex-row items-center gap-4">
         <p
-          class="text-gray-600 text-xs font-mono tracking-tighter uppercase font-bold"
+          class="text-gray-600 text-[10px] font-mono tracking-tighter uppercase font-bold"
         >
           &copy; SPINOTEK_LABS_2026
         </p>
-        <span class="text-gray-800">|</span>
-        <p class="text-gray-600 text-xs font-mono uppercase tracking-tighter">
+        <span class="hidden md:block text-gray-800">|</span>
+        <p
+          class="text-gray-600 text-[10px] font-mono uppercase tracking-tighter"
+        >
           Community Driven Platform
         </p>
       </div>
-      <div class="flex gap-8">
-        <a
-          href="https://github.com/Spinotek-Organization/vibe-spinotek"
-          class="text-gray-600 hover:text-blue-500 text-[10px] uppercase tracking-widest transition font-bold"
-          >Drop Your Work</a
-        >
-        <a
-          href="https://spinotek.com"
-          class="text-gray-600 hover:text-blue-500 text-[10px] uppercase tracking-widest transition font-bold"
-          >Spinotek Site</a
-        >
-      </div>
+      <div class="flex flex-wrap justify-center gap-6 md:gap-8"></div>
     </footer>
 
     <script>
